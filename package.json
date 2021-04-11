@@ -1,0 +1,28 @@
+{
+  "name": "total-auth",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Darren Corbett <corbsoft@gmail.com>",
+  "description": "a collection of oauth utilities",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "install": "lerna bootstrap --use-workspaces",
+    "start": "lerna run start --stream",
+    "build": "lerna run build --stream",
+    "tsc": "lerna run tsc --stream",
+    "test": "lerna run test --stream"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Total-Loyalty/active-auth.git"
+  },
+  "engines": {
+    "node": "15.x",
+    "npm": "7.x"
+  }
+}
