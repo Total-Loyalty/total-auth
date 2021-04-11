@@ -1,5 +1,4 @@
 const path = require('path')
-const { CheckerPlugin } = require('awesome-typescript-loader')
 
 const LIB = 'lib'
 const APP_ROOT = path.resolve(__dirname, LIB)
@@ -22,9 +21,8 @@ module.exports = {
     rules: [
       {
         test: /\.ts?$/,
-        loader: 'awesome-typescript-loader',
+        loader: 'ts-loader',
       },
     ],
   },
-  plugins: [new CheckerPlugin()],
 }
